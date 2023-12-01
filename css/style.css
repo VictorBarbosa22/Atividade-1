@@ -43,12 +43,8 @@
     margin: 10px;
     width: 40px;
 }
- 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    word-spacing: 1.5px;
-}
+
+
 
 .section {
     margin-left: 30px;
@@ -96,3 +92,90 @@ body{
    position: absolute;
    left: 20%;
 }
+
+
+#shk1 {
+    padding: 10px;
+    width: 900px;
+    height: 500px;
+}
+
+main{
+    margin-left: 30px;
+}
+main ul{
+    margin-left: 50px;
+}
+
+#hamlet{
+    width: 300px;
+}
+#otelo{
+    width: 300px;
+    height: 410px;
+    padding-left: 30px;
+}
+#rm{
+    float: left;
+    padding-right: 15px;
+}
+
+#dark{
+    padding-left: 650px;
+}
+
+body{
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    word-spacing: 1.5px;
+    padding-bottom: 30px;
+
+}
+
+body.dark{
+    background-color: #1e2124;
+    color: #fff;
+}
+
+.checkbox{
+    opacity: 0;
+    position:fixed;
+    
+}
+
+.label{
+    background-color:black;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    position: relative;
+    height: 26px;
+    width: 50px;
+}
+
+.label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    align-items: center;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0,2s linear;
+
+}
+
+.checkbox:checked + .label .ball{
+    
+    transform: translateX(24px);
+
+
+}
+
